@@ -15,7 +15,7 @@ env:
   REPO_URL: https://github.com/istoreos/istoreos
   # REPO_BRANCH: main
   FEEDS_CONF: feeds.conf
-  CONFIG_FILE: .config
+  CONFIG_FILE: rk35xx/.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: true
@@ -31,12 +31,12 @@ jobs:
       matrix:
         REPO_BRANCH:
           # - main
-          # - istoreos-22.03
-          - istoreos-23.05
+          - istoreos-22.03
+          # - istoreos-23.05
         ARCHITECTURE:
           # - rk33xx
-          # - rk35xx
-          - x86
+          - rk35xx
+          # - x86
         os:
           - ubuntu-22.04
 
