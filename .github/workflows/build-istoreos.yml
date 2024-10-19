@@ -1,4 +1,4 @@
-name: Build iStore OS
+name: iStoreOS-X86-23.05
 
 on:
   repository_dispatch:
